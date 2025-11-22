@@ -58,27 +58,8 @@ This app was developed for **CP3406 – Mobile App Development (Assessment 2)** 
 | **Notifications** | NotificationChannel + ManagerCompat |
 | **Version Control** | Git + GitHub |
 
----
 
-📁 Project Structure
 
-app/
-├── model/
-│ ├── TaskEntity.kt
-│ ├── TaskDao.kt
-│ └── TaskDatabase.kt
-├── network/
-│ ├── ApiService.kt
-│ └── RetrofitClient.kt
-├── repository/
-│ ├── TaskRepository.kt
-│ └── TaskRepositoryInterface.kt
-├── ui_screens/
-│ ├── HomeScreen.kt
-│ └── AddTaskScreen.kt
-├── viewmodel/
-│ └── TaskViewModel.kt
-└── MainActivity.kt
 
 
 
