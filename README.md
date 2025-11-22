@@ -60,3 +60,24 @@ Room.
 DAO.
 Entity.
 Flow for live database updates.
+
+
+app/src/main/java/com.example.studyplannerapp/
+│
+├── model
+│   ├── TaskEntity.kt
+│   ├── TaskDao.kt
+│   └── TaskDatabase.kt
+│
+├── repository
+│   └── TaskRepository.kt
+│
+├── viewmodel
+│   └── TaskViewModel.kt
+│
+├── ui_screens
+│   ├── HomeScreen.kt
+│   └── AddTaskScreen.kt
+│
+└── MainActivity.kt
+
