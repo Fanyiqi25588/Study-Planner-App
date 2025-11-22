@@ -1,114 +1,66 @@
-Study Planner App
+# 📚 Study Planner App  
+*A simple and smart study planning app built with Kotlin + Jetpack Compose.*
 
-A Mobile App for Managing Study Tasks — CP3406 Assignment 2
+---
 
-The Study Planner App helps users manage tasks, set deadlines, track progress, and organise their study schedules.
-The app is built using Kotlin, Jetpack Compose, Room Database, and MVVM architecture, showcasing modern Android development practices.
+🌟 Overview  
+Study Planner App is a mobile application designed to help students organise their study tasks, set deadlines, and stay motivated with daily inspirational quotes.  
+This app was developed for **CP3406 – Mobile App Development (Assessment 2)** using modern Android development tools.
+
+---
 
 ✨ Features
 
-Add Study Tasks.
-Enter task name.
-Choose a deadline using Material Design DatePicker.
+  **Task Management**
+- Add new study tasks  
+- Include deadlines (Date Picker)  
+- Mark tasks as completed  
+- Delete tasks  
+- Tasks are stored locally using **Room Database** (persistent storage)
 
-📝 Task List
+🗂 **Sorting Options**
+- Sort by newest  
+- Sort by deadline  
 
-View all tasks in a clean Material 3 UI.
-Each task is displayed using a styled Card.
-Room database ensures tasks are saved permanently.
+🔔 **Notifications**
+- Sends a notification when a new task is added  
+- Android 13+ permission handling included
 
-✔ Mark Tasks as Completed
+🌐 **External API Integration**
+- Fetches inspirational study quotes using **Retrofit + JSON API**
+- Quote updates on app startup
 
-Tap to toggle done / not done.
-Real-time UI update using StateFlow.
+🎨 **Modern UI with Material Design 3**
+- Clean Home screen with Card layout  
+- Floating Action Button（+）  
+- Light theme with customised colours  
+- Responsive Compose layouts
 
-🗑 Delete Tasks
+📦 **Architecture (MVVM + Repository)**
+- ViewModel with Flow  
+- Repository abstraction  
+- Room DAO for local storage  
+- Retrofit for networking  
+- Separations: `ui_screens`, `viewmodel`, `model`, `repository`
 
-Remove tasks instantly.
-UI auto-updates without refresh.
-
-🔃 Sorting Options
-
-Sort tasks by:
-Newest first (default).
-Deadline (earliest first).
-
-🎨 Modern UI (Jetpack Compose)
-
-Material 3 components.
-Floating Action Button.
-TopAppBar with actions.
-Custom color theme.
+---
 
 🛠 Tech Stack
 
-Frontend.
-Jetpack Compose.
-Material 3 UI.
-Navigation Compose.
+| Category | Technologies |
+|---------|--------------|
+| **Language** | Kotlin |
+| **UI** | Jetpack Compose + Material 3 |
+| **Local Storage** | Room Database |
+| **Networking** | Retrofit2 + Gson |
+| **Architecture** | MVVM, Repository |
+| **Async** | Coroutines + Flow |
+| **Notifications** | NotificationChannel + ManagerCompat |
+| **Version Control** | Git + GitHub |
 
-Architecture
+---
 
-MVVM.
-StateFlow & MutableStateFlow.
-Coroutines.
-Repository Pattern.
-
-Database
-
-Room.
-DAO.
-Entity.
-Flow for live database updates.
+## 📁 Project Structure
 
 
-app/src/main/java/com.example.studyplannerapp/
-│
-├── model
-│   ├── TaskEntity.kt
-│   ├── TaskDao.kt
-│   └── TaskDatabase.kt
-│
-├── repository
-│   └── TaskRepository.kt
-│
-├── viewmodel
-│   └── TaskViewModel.kt
-│
-├── ui_screens
-│   ├── HomeScreen.kt
-│   └── AddTaskScreen.kt
-│
-└── MainActivity.kt
-
-
-
-🚀 How to Run
-
-1.Clone this repository
-
-2.Open the project in Android Studio
-
-3.Ensure the following:
-Android SDK 34 installed
-Kotlin plugin enabled
-Emulator or physical Android device
-
-4.Run the project using ▶️ Run button
-
-5.Tasks persist automatically using Room
-
-🔮 Future Improvements
-
-Edit Task screen
-
-Notification reminders for deadlines
-
-Online sync (cloud backup)
-
-Dark mode / dynamic colors
-
-Animated transitions
-
-More advanced task filtering
 
