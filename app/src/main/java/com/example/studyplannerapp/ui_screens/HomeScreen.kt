@@ -1,5 +1,6 @@
 package com.example.studyplannerapp.ui_screens
 
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -34,8 +35,10 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import com.example.studyplannerapp.viewmodel.TaskViewModel
 
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
+
 fun HomeScreen(
     onAddTaskClick: () -> Unit,
     viewModel: TaskViewModel,
@@ -86,6 +89,12 @@ fun HomeScreen(
                 .padding(padding)
                 .padding(16.dp)
         ) {
+            val quote by viewModel.quoteText.collectAsState()
+            Text(
+                text = quote,
+                style = MaterialTheme.typography.bodyLarge,
+                modifier = Modifier.padding(16.dp)
+            )
 
             Text(
                 text = "Your Tasks",
