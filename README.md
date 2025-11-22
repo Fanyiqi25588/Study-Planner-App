@@ -81,3 +81,34 @@ app/src/main/java/com.example.studyplannerapp/
 │
 └── MainActivity.kt
 
+
+
+🚀 How to Run
+
+1.Clone this repository
+
+2.Open the project in Android Studio
+
+3.Ensure the following:
+Android SDK 34 installed
+Kotlin plugin enabled
+Emulator or physical Android device
+
+4.Run the project using ▶️ Run button
+
+5.Tasks persist automatically using Room
+
+🔮 Future Improvements
+
+Edit Task screen
+
+Notification reminders for deadlines
+
+Online sync (cloud backup)
+
+Dark mode / dynamic colors
+
+Animated transitions
+
+More advanced task filtering
+
